@@ -1,0 +1,12 @@
+### Ansible
+*.retry
+### Vagrant
+.vagrant/
+### IntelliJ
+*.iml
+.idea/
+
+### packer build
+base-box/
+builds/
+packer_cache/

@@ -1,0 +1,37 @@
+- hosts: localhost
+  vars:
+    - base_box_dir: "base-box"
+    - base_box_group: "bento"
+    - base_box: "centos-7"
+    - base_box_version: "202008.16.0"
+    - base_box_provider: "virtualbox"
+
+  tasks:
+    - name: Remove existing directories
+      file:
+        path: "{{ item }}"
+        state: absent
+        mode: 0755
+      with_items:
+        - "{{ base_box_dir }}"
+        - "builds"
+
+    - name: Create box directory
+      file:
+        path: "{{ base_box_dir }}"
+        state: directory
+        mode: 0755
+
+    - name: Download vagrant box
+      get_url:
+        url: "https://app.vagrantup.com/{{ base_box_group }}/boxes/{{ base_box }}/versions/{{ base_box_version }}/providers/{{ base_box_provider }}.box"
+        dest: "{{ base_box_dir }}/{{ base_box_provider }}.box"
+        mode: 0644
+
+    - name: Extract box
+      command:
+        cmd: tar -zxvf {{ base_box_dir }}/{{ base_box_provider }}.box -C {{ base_box_dir }}/
+        warn: no # unarchive module does not support *.box files
+
+    - name: Run packer build
+      command: packer.io build -var-file=vagrant-cloud-token.json ci-cd-toolbox-x86_64.json
