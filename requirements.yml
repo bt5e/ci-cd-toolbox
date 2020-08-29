@@ -12,3 +12,6 @@
   version: v3.3.0
 
 - src: bt5e.google_cloud_sdk
+
+- src: bt5e.hashicorp_terraform
+  version: v0.13.0

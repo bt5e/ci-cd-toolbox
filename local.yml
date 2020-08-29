@@ -7,6 +7,7 @@
     - bt5e.kubectl
     - bt5e.k8s_helm
     - bt5e.google_cloud_sdk
+    - bt5e.hashicorp_terraform
 
   tasks:
     - name: Install packages via yum
