@@ -1,7 +1,7 @@
 CI/CD Toolbox
 =============
 
-CI/CD toolbox based on CentOS.
+CI/CD toolbox based on CentOS. Available on [Vagrant Cloud](https://app.vagrantup.com/btse/boxes/ci-cd-toolbox).
 
 ## Components
 
