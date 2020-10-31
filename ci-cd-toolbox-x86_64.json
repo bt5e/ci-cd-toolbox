@@ -39,6 +39,6 @@
   ],
   "variables": {
     "box_basename": "ci-cd-toolbox",
-    "vagrant_cloud_version": "202008.29.0"
+    "vagrant_cloud_version": "202010.31.0"
   }
 }
