@@ -3,7 +3,7 @@
     - base_box_dir: "base-box"
     - base_box_group: "bento"
     - base_box: "centos-7"
-    - base_box_version: "202008.16.0"
+    - base_box_version: "202010.22.0"
     - base_box_provider: "virtualbox"
 
   tasks:
