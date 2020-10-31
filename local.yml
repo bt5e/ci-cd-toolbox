@@ -14,5 +14,6 @@
       yum:
         name:
           - "python3-pip"
+          - "git"
         state: latest
       become: yes
