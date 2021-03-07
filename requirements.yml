@@ -1,5 +1,5 @@
 - src: bt5e.docker_ce
-  version: v19.3.13
+  version: v20.10.5
 
 - src: bt5e.docker_compose
   version: v1.27.4
