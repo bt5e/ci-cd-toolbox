@@ -9,7 +9,7 @@
 - src: bt5e.kubectl
 
 - src: bt5e.k8s_helm
-  version: v3.4.0
+  version: v3.5.2
 
 - src: bt5e.google_cloud_sdk
 
