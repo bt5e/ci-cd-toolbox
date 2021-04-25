@@ -1,17 +1,20 @@
 - src: bt5e.docker_ce
-  version: v20.10.5
+  version: v20.10.6
 
 - src: bt5e.docker_compose
-  version: v1.27.4
+  version: v1.29.1
 
 - src: bt5e.docker-non-root-user
 
 - src: bt5e.kubectl
 
 - src: bt5e.k8s_helm
-  version: v3.5.2
+  version: v3.5.4
 
 - src: bt5e.google_cloud_sdk
 
 - src: bt5e.hashicorp_terraform
-  version: v0.14.7
+  version: v0.15.0
+
+- src: bt5e.hashicorp_packer
+  version: v1.7.2
